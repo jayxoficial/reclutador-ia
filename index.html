@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Entrevistas - Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="chat-header">
+            <h1>🤖 Asistente de Entrevistas</h1>
+            <p>Sistema de Reclutamiento Laboral</p>
+        </div>
+        
+        <div class="chat-container" id="chatContainer">
+            <div class="message bot-message">
+                <div class="message-content" id="mensajeInicial">
+                    <!-- El mensaje inicial se cargará aquí -->
+                </div>
+            </div>
+        </div>
+        
+        <div class="input-container">
+            <textarea 
+                id="userInput" 
+                placeholder="Escribe tu respuesta aquí..." 
+                rows="3"
+            ></textarea>
+            <button id="sendButton" onclick="enviarRespuesta()">Enviar</button>
+        </div>
+        
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <span class="progress-text" id="progressText">Preparando entrevista...</span>
+        </div>
+    </div>
+
+    <script src="chatbot.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
